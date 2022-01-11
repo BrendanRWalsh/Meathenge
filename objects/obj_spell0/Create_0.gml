@@ -9,4 +9,4 @@ homing_ammount = 0.05
 homing_radius = 150
 has_target = false;
 new_dir = 0
-knockback = 30
+knockback = 5

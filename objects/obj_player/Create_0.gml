@@ -29,6 +29,7 @@ mana = 100;
 mana_max = 100;
 mana_regen = 1 / room_speed;
 
+allow_cast = true;
 //spells
 /*
 0 = neutral fire
@@ -41,9 +42,47 @@ mana_regen = 1 / room_speed;
 7 = 
 */
 spells = [
-	{
+	{ //normal shot
 		cost : 5,
 		reload : 0.4 * room_speed,
+		cooldown : 0,
+		unlocked: true
+	},
+	{ //aoe
+		cost : 20,
+		reload : 2 * room_speed,
+		cooldown : 0,
+		unlocked: true
+	},
+	{
+		cost : 20,
+		reload : 2 * room_speed,
+		cooldown : 0,
+		unlocked: true
+	},
+	{ //laser
+		cost : 0,
+		reload : 1 * room_speed,
+		cooldown : 0,
+		unlocked: true,
+		damage : 5,
+		knockback : 1
+	},
+	{
+		cost : 20,
+		reload : 2 * room_speed,
+		cooldown : 0,
+		unlocked: true
+	},
+	{
+		cost : 20,
+		reload : 2 * room_speed,
+		cooldown : 0,
+		unlocked: true
+	},
+	{
+		cost : 20,
+		reload : 2 * room_speed,
 		cooldown : 0,
 		unlocked: true
 	},

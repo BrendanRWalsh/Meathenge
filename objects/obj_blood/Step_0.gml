@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-function home_in(target,rotation_speed,damping){
+function home_in(target){
 	new_dir = point_direction(x, y, target.x, target.y);
 	new_spd = max(rotation_speed, 0);
 	dmp = clamp(damping, 0, 1);
@@ -9,6 +9,7 @@ function home_in(target,rotation_speed,damping){
 }
 
 home_in(obj_henge,3,0.5)
+rotation_speed += 0.1
 //move obj
 x += lengthdir_x(spd,dir)
 y += lengthdir_y(spd,dir)

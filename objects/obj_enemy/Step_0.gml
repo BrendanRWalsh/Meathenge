@@ -123,7 +123,13 @@ if(!knocked_back){
 
 	}
 } else {
+	_xx = lengthdir_x(recoil,dir)
+	_yy = lengthdir_y(recoil,dir)
+	recoil *= 0.9
+	x += _xx
+	y += _yy
 	recoil_time--
+	
 	if recoil_time <= 0 {
 		knocked_back = false;
 		recoil_time = recoil_value;

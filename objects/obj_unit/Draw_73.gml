@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+/// @description Insert description here
+// You can write your code in this editor
 if obj_game.debug_view {
 	draw_set_colour(c_white)
-	if instance_exists(target){draw_line(x,y,target.x,target.y)}
+	if target != noone {draw_line(x,y,target.x,target.y)}
 	draw_set_colour(c_fuchsia)
 	draw_circle(x,y,sight_radius,true)
 	draw_set_colour(c_red)

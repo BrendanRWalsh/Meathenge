@@ -45,8 +45,8 @@ if homing {
 	//enemy
 	_inst = instance_place(x,y,obj_enemy);
 	if _inst != noone {
-		_inst.x += lengthdir_x(knockback,dir)
-		_inst.y += lengthdir_y(knockback,dir)
+		_inst.dir = dir
+		_inst.recoil = knockback
 		_inst.hp -= damage
 		_inst.knocked_back = true
 		_inst.recoil_time = _inst.recoil_value;

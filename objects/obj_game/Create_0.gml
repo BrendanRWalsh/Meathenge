@@ -6,9 +6,9 @@ spawn_rate = 3 * room_speed
 spawn_timer = spawn_rate
 max_spawn = 4;
 blud = surface_create(room_height,room_width);
+debug_view = false;
 
-
-
+randomize();
 current_wave = 0
 spawn_budget = 5
 spawn_hp_mod = 1
@@ -25,7 +25,8 @@ enemy_units = [
 		attack_speed: 1,
 		memory: 2,
 		allow_knockback : true,
-		knockback_resistance: 0
+		knockback_resistance: 0,
+		sprite : spr_normal_palceholder
 	},
 	{
 		type : "fast",
@@ -38,7 +39,8 @@ enemy_units = [
 		attack_speed: 0.8,
 		memory: 2,
 		allow_knockback : true,
-		knockback_resistance: 0
+		knockback_resistance: 0,
+		sprite : spr_normal_palceholder
 	},
 	{	
 		type : "armoured",
@@ -51,7 +53,8 @@ enemy_units = [
 		attack_speed: 1,
 		memory: 2,
 		allow_knockback : true,
-		knockback_resistance: 0
+		knockback_resistance: 0,
+		sprite : spr_normal_palceholder
 	},
 	{
 		type : "mage",
@@ -64,7 +67,8 @@ enemy_units = [
 		attack_speed: 1,
 		memory: 2,
 		allow_knockback : true,
-		knockback_resistance: 0
+		knockback_resistance: 0,
+		sprite : spr_normal_palceholder
 	},
 	{
 		type : "tank",
@@ -77,7 +81,8 @@ enemy_units = [
 		attack_speed: 1,
 		memory: 2,
 		allow_knockback : false,
-		knockback_resistance: 0
+		knockback_resistance: 0,
+		sprite : spr_normal_palceholder
 	},
 	{
 		type : "behemoth",
@@ -90,7 +95,9 @@ enemy_units = [
 		attack_speed: 1,
 		memory: 2,
 		allow_knockback : false,
-		knockback_resistance: 0
+		knockback_resistance: 0,
+		sprite : spr_normal_palceholder
 	}
 ]
 event_user(0)
+show_debug_message(irandom(3))

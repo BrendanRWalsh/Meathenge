@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 function spawn_foe(){
-	edge = round(random_range(0,3))
+	edge = irandom(3)
+	show_debug_message(edge)
 	switch(edge){
 		case 0:
 			spawn_x = room_width;
@@ -18,7 +19,7 @@ function spawn_foe(){
 			break
 		case 3:
 			spawn_x = random_range(0,room_width);
-			spawn_y = 0
+			spawn_y = room_height
 			break
 	}
 	_foe = enemy_units[wave_units[0]]
@@ -32,6 +33,7 @@ function spawn_foe(){
 	e.memory =  _foe.memory
 	e.allow_knockback =  _foe.allow_knockback
 	e.knockback_resistance =  _foe.knockback_resistance
+	e.sprite_index = _foe.sprite
 	array_delete(wave_units,0,1)
 	return e
 }

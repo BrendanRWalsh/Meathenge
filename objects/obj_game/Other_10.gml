@@ -12,7 +12,7 @@ function populate_wave(){
 }
 current_wave++
 spawn_budget += 2 * current_wave
-spawn_rate += 1.05 * current_wave
+spawn_rate /= 0.99 * current_wave
 spawn_hp_mod += 1.1 * current_wave
 
 show_debug_message(spawn_budget)

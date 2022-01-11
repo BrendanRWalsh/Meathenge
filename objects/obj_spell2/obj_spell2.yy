@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_spell2",
+    "path": "sprites/spr_spell2/spr_spell2.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -19,15 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "actors",
-    "path": "folders/Objects/actors.yy",
+    "name": "elements",
+    "path": "folders/Objects/elements.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_turret",
+  "name": "obj_spell2",
   "tags": [],
   "resourceType": "GMObject",
 }
